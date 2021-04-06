@@ -1,0 +1,126 @@
+.hr{
+    background-color:white;
+    border-color:white;
+}
+
+.container {
+    position: relative;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.data {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgb(45, 196, 255);
+}
+  
+.container:hover .data {
+    opacity: 1;
+  }
+  
+.scritta {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.expertise {
+    background: #ff7e5f;
+    background: -webkit-linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    min-height: 100vh;
+}
+
+.exp-card{
+    min-height: 200px;
+}
+
+#schedaMia p {
+    height: 1.4rem;
+}
+
+.boxradius, .boxradius img{
+    border-radius: 10px;
+}
+.backblue{
+    background-color: rgb(26,32,75);
+}
+a, a:hover,a p, a:hover p{
+    text-decoration: none;
+}
+
+header span.animated {
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    }
+
+
+.arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+//input[type=button], input[type=submit], input[type=reset] 
+form p{
+    background-color: white;
+    border: none;
+    color: rgb(154, 2, 255);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#primaCopertina{
+    margin-top:-52px;
+    background: white url("sfondo.png") no-repeat fixed;
+    background-size: cover;
+}
